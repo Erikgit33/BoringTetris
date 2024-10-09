@@ -66,6 +66,7 @@ namespace BoringTetris
             pic6_3 = new PictureBox();
             pic6_4 = new PictureBox();
             pic6_0 = new PictureBox();
+            labelScore = new Label();
             ((System.ComponentModel.ISupportInitialize)pic0_0).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic0_4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic0_3).BeginInit();
@@ -105,9 +106,10 @@ namespace BoringTetris
             // 
             // buttonClear
             // 
-            buttonClear.Location = new Point(12, 12);
+            buttonClear.Location = new Point(15, 15);
+            buttonClear.Margin = new Padding(4);
             buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(94, 29);
+            buttonClear.Size = new Size(118, 36);
             buttonClear.TabIndex = 0;
             buttonClear.Text = "Clear";
             buttonClear.UseVisualStyleBackColor = true;
@@ -116,9 +118,10 @@ namespace BoringTetris
             // pic0_0
             // 
             pic0_0.Image = Properties.Resources.tetris_block_dark;
-            pic0_0.Location = new Point(0, 60);
+            pic0_0.Location = new Point(0, 75);
+            pic0_0.Margin = new Padding(4);
             pic0_0.Name = "pic0_0";
-            pic0_0.Size = new Size(48, 48);
+            pic0_0.Size = new Size(60, 60);
             pic0_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic0_0.TabIndex = 1;
             pic0_0.TabStop = false;
@@ -127,9 +130,10 @@ namespace BoringTetris
             // pic0_4
             // 
             pic0_4.Image = Properties.Resources.tetris_block_dark;
-            pic0_4.Location = new Point(192, 60);
+            pic0_4.Location = new Point(240, 75);
+            pic0_4.Margin = new Padding(4);
             pic0_4.Name = "pic0_4";
-            pic0_4.Size = new Size(48, 48);
+            pic0_4.Size = new Size(60, 60);
             pic0_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic0_4.TabIndex = 2;
             pic0_4.TabStop = false;
@@ -138,9 +142,10 @@ namespace BoringTetris
             // pic0_3
             // 
             pic0_3.Image = Properties.Resources.tetris_block_dark;
-            pic0_3.Location = new Point(144, 60);
+            pic0_3.Location = new Point(180, 75);
+            pic0_3.Margin = new Padding(4);
             pic0_3.Name = "pic0_3";
-            pic0_3.Size = new Size(48, 48);
+            pic0_3.Size = new Size(60, 60);
             pic0_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic0_3.TabIndex = 3;
             pic0_3.TabStop = false;
@@ -149,9 +154,10 @@ namespace BoringTetris
             // pic0_2
             // 
             pic0_2.Image = Properties.Resources.tetris_block_dark;
-            pic0_2.Location = new Point(96, 60);
+            pic0_2.Location = new Point(120, 75);
+            pic0_2.Margin = new Padding(4);
             pic0_2.Name = "pic0_2";
-            pic0_2.Size = new Size(48, 48);
+            pic0_2.Size = new Size(60, 60);
             pic0_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic0_2.TabIndex = 4;
             pic0_2.TabStop = false;
@@ -160,9 +166,10 @@ namespace BoringTetris
             // pic0_1
             // 
             pic0_1.Image = Properties.Resources.tetris_block_dark;
-            pic0_1.Location = new Point(48, 60);
+            pic0_1.Location = new Point(60, 75);
+            pic0_1.Margin = new Padding(4);
             pic0_1.Name = "pic0_1";
-            pic0_1.Size = new Size(48, 48);
+            pic0_1.Size = new Size(60, 60);
             pic0_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic0_1.TabIndex = 5;
             pic0_1.TabStop = false;
@@ -171,9 +178,10 @@ namespace BoringTetris
             // pic1_1
             // 
             pic1_1.Image = Properties.Resources.tetris_block_dark;
-            pic1_1.Location = new Point(48, 108);
+            pic1_1.Location = new Point(60, 135);
+            pic1_1.Margin = new Padding(4);
             pic1_1.Name = "pic1_1";
-            pic1_1.Size = new Size(48, 48);
+            pic1_1.Size = new Size(60, 60);
             pic1_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic1_1.TabIndex = 12;
             pic1_1.TabStop = false;
@@ -182,9 +190,10 @@ namespace BoringTetris
             // pic1_2
             // 
             pic1_2.Image = Properties.Resources.tetris_block_dark;
-            pic1_2.Location = new Point(96, 108);
+            pic1_2.Location = new Point(120, 135);
+            pic1_2.Margin = new Padding(4);
             pic1_2.Name = "pic1_2";
-            pic1_2.Size = new Size(48, 48);
+            pic1_2.Size = new Size(60, 60);
             pic1_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic1_2.TabIndex = 11;
             pic1_2.TabStop = false;
@@ -193,9 +202,10 @@ namespace BoringTetris
             // pic1_3
             // 
             pic1_3.Image = Properties.Resources.tetris_block_dark;
-            pic1_3.Location = new Point(144, 108);
+            pic1_3.Location = new Point(180, 135);
+            pic1_3.Margin = new Padding(4);
             pic1_3.Name = "pic1_3";
-            pic1_3.Size = new Size(48, 48);
+            pic1_3.Size = new Size(60, 60);
             pic1_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic1_3.TabIndex = 10;
             pic1_3.TabStop = false;
@@ -204,9 +214,10 @@ namespace BoringTetris
             // pic1_4
             // 
             pic1_4.Image = Properties.Resources.tetris_block_dark;
-            pic1_4.Location = new Point(192, 108);
+            pic1_4.Location = new Point(240, 135);
+            pic1_4.Margin = new Padding(4);
             pic1_4.Name = "pic1_4";
-            pic1_4.Size = new Size(48, 48);
+            pic1_4.Size = new Size(60, 60);
             pic1_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic1_4.TabIndex = 9;
             pic1_4.TabStop = false;
@@ -215,9 +226,10 @@ namespace BoringTetris
             // pic1_0
             // 
             pic1_0.Image = Properties.Resources.tetris_block_dark;
-            pic1_0.Location = new Point(0, 108);
+            pic1_0.Location = new Point(0, 135);
+            pic1_0.Margin = new Padding(4);
             pic1_0.Name = "pic1_0";
-            pic1_0.Size = new Size(48, 48);
+            pic1_0.Size = new Size(60, 60);
             pic1_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic1_0.TabIndex = 8;
             pic1_0.TabStop = false;
@@ -226,9 +238,10 @@ namespace BoringTetris
             // pic2_1
             // 
             pic2_1.Image = Properties.Resources.tetris_block_dark;
-            pic2_1.Location = new Point(48, 156);
+            pic2_1.Location = new Point(60, 195);
+            pic2_1.Margin = new Padding(4);
             pic2_1.Name = "pic2_1";
-            pic2_1.Size = new Size(48, 48);
+            pic2_1.Size = new Size(60, 60);
             pic2_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic2_1.TabIndex = 19;
             pic2_1.TabStop = false;
@@ -237,9 +250,10 @@ namespace BoringTetris
             // pic2_2
             // 
             pic2_2.Image = Properties.Resources.tetris_block_dark;
-            pic2_2.Location = new Point(96, 156);
+            pic2_2.Location = new Point(120, 195);
+            pic2_2.Margin = new Padding(4);
             pic2_2.Name = "pic2_2";
-            pic2_2.Size = new Size(48, 48);
+            pic2_2.Size = new Size(60, 60);
             pic2_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic2_2.TabIndex = 11;
             pic2_2.TabStop = false;
@@ -248,9 +262,10 @@ namespace BoringTetris
             // pic2_3
             // 
             pic2_3.Image = Properties.Resources.tetris_block_dark;
-            pic2_3.Location = new Point(144, 156);
+            pic2_3.Location = new Point(180, 195);
+            pic2_3.Margin = new Padding(4);
             pic2_3.Name = "pic2_3";
-            pic2_3.Size = new Size(48, 48);
+            pic2_3.Size = new Size(60, 60);
             pic2_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic2_3.TabIndex = 17;
             pic2_3.TabStop = false;
@@ -259,9 +274,10 @@ namespace BoringTetris
             // pic2_4
             // 
             pic2_4.Image = Properties.Resources.tetris_block_dark;
-            pic2_4.Location = new Point(192, 156);
+            pic2_4.Location = new Point(240, 195);
+            pic2_4.Margin = new Padding(4);
             pic2_4.Name = "pic2_4";
-            pic2_4.Size = new Size(48, 48);
+            pic2_4.Size = new Size(60, 60);
             pic2_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic2_4.TabIndex = 16;
             pic2_4.TabStop = false;
@@ -270,9 +286,10 @@ namespace BoringTetris
             // pic2_0
             // 
             pic2_0.Image = Properties.Resources.tetris_block_dark;
-            pic2_0.Location = new Point(0, 156);
+            pic2_0.Location = new Point(0, 195);
+            pic2_0.Margin = new Padding(4);
             pic2_0.Name = "pic2_0";
-            pic2_0.Size = new Size(48, 48);
+            pic2_0.Size = new Size(60, 60);
             pic2_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic2_0.TabIndex = 15;
             pic2_0.TabStop = false;
@@ -281,9 +298,10 @@ namespace BoringTetris
             // pic3_1
             // 
             pic3_1.Image = Properties.Resources.tetris_block_dark;
-            pic3_1.Location = new Point(48, 204);
+            pic3_1.Location = new Point(60, 255);
+            pic3_1.Margin = new Padding(4);
             pic3_1.Name = "pic3_1";
-            pic3_1.Size = new Size(48, 48);
+            pic3_1.Size = new Size(60, 60);
             pic3_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic3_1.TabIndex = 27;
             pic3_1.TabStop = false;
@@ -292,9 +310,10 @@ namespace BoringTetris
             // pic3_2
             // 
             pic3_2.Image = Properties.Resources.tetris_block_dark;
-            pic3_2.Location = new Point(96, 204);
+            pic3_2.Location = new Point(120, 255);
+            pic3_2.Margin = new Padding(4);
             pic3_2.Name = "pic3_2";
-            pic3_2.Size = new Size(48, 48);
+            pic3_2.Size = new Size(60, 60);
             pic3_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic3_2.TabIndex = 22;
             pic3_2.TabStop = false;
@@ -303,9 +322,10 @@ namespace BoringTetris
             // pic3_3
             // 
             pic3_3.Image = Properties.Resources.tetris_block_dark;
-            pic3_3.Location = new Point(144, 204);
+            pic3_3.Location = new Point(180, 255);
+            pic3_3.Margin = new Padding(4);
             pic3_3.Name = "pic3_3";
-            pic3_3.Size = new Size(48, 48);
+            pic3_3.Size = new Size(60, 60);
             pic3_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic3_3.TabIndex = 26;
             pic3_3.TabStop = false;
@@ -314,9 +334,10 @@ namespace BoringTetris
             // pic3_4
             // 
             pic3_4.Image = Properties.Resources.tetris_block_dark;
-            pic3_4.Location = new Point(192, 204);
+            pic3_4.Location = new Point(240, 255);
+            pic3_4.Margin = new Padding(4);
             pic3_4.Name = "pic3_4";
-            pic3_4.Size = new Size(48, 48);
+            pic3_4.Size = new Size(60, 60);
             pic3_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic3_4.TabIndex = 25;
             pic3_4.TabStop = false;
@@ -325,9 +346,10 @@ namespace BoringTetris
             // pic3_0
             // 
             pic3_0.Image = Properties.Resources.tetris_block_dark;
-            pic3_0.Location = new Point(0, 204);
+            pic3_0.Location = new Point(0, 255);
+            pic3_0.Margin = new Padding(4);
             pic3_0.Name = "pic3_0";
-            pic3_0.Size = new Size(48, 48);
+            pic3_0.Size = new Size(60, 60);
             pic3_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic3_0.TabIndex = 24;
             pic3_0.TabStop = false;
@@ -336,9 +358,10 @@ namespace BoringTetris
             // pic4_1
             // 
             pic4_1.Image = Properties.Resources.tetris_block_dark;
-            pic4_1.Location = new Point(48, 252);
+            pic4_1.Location = new Point(60, 315);
+            pic4_1.Margin = new Padding(4);
             pic4_1.Name = "pic4_1";
-            pic4_1.Size = new Size(48, 48);
+            pic4_1.Size = new Size(60, 60);
             pic4_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic4_1.TabIndex = 32;
             pic4_1.TabStop = false;
@@ -347,9 +370,10 @@ namespace BoringTetris
             // pic4_2
             // 
             pic4_2.Image = Properties.Resources.tetris_block_dark;
-            pic4_2.Location = new Point(96, 252);
+            pic4_2.Location = new Point(120, 315);
+            pic4_2.Margin = new Padding(4);
             pic4_2.Name = "pic4_2";
-            pic4_2.Size = new Size(48, 48);
+            pic4_2.Size = new Size(60, 60);
             pic4_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic4_2.TabIndex = 28;
             pic4_2.TabStop = false;
@@ -358,9 +382,10 @@ namespace BoringTetris
             // pic4_3
             // 
             pic4_3.Image = Properties.Resources.tetris_block_dark;
-            pic4_3.Location = new Point(144, 252);
+            pic4_3.Location = new Point(180, 315);
+            pic4_3.Margin = new Padding(4);
             pic4_3.Name = "pic4_3";
-            pic4_3.Size = new Size(48, 48);
+            pic4_3.Size = new Size(60, 60);
             pic4_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic4_3.TabIndex = 31;
             pic4_3.TabStop = false;
@@ -369,9 +394,10 @@ namespace BoringTetris
             // pic4_4
             // 
             pic4_4.Image = Properties.Resources.tetris_block_dark;
-            pic4_4.Location = new Point(192, 252);
+            pic4_4.Location = new Point(240, 315);
+            pic4_4.Margin = new Padding(4);
             pic4_4.Name = "pic4_4";
-            pic4_4.Size = new Size(48, 48);
+            pic4_4.Size = new Size(60, 60);
             pic4_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic4_4.TabIndex = 30;
             pic4_4.TabStop = false;
@@ -380,9 +406,10 @@ namespace BoringTetris
             // pic4_0
             // 
             pic4_0.Image = Properties.Resources.tetris_block_dark;
-            pic4_0.Location = new Point(0, 252);
+            pic4_0.Location = new Point(0, 315);
+            pic4_0.Margin = new Padding(4);
             pic4_0.Name = "pic4_0";
-            pic4_0.Size = new Size(48, 48);
+            pic4_0.Size = new Size(60, 60);
             pic4_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic4_0.TabIndex = 29;
             pic4_0.TabStop = false;
@@ -391,9 +418,10 @@ namespace BoringTetris
             // pic5_1
             // 
             pic5_1.Image = Properties.Resources.tetris_block_dark;
-            pic5_1.Location = new Point(48, 300);
+            pic5_1.Location = new Point(60, 375);
+            pic5_1.Margin = new Padding(4);
             pic5_1.Name = "pic5_1";
-            pic5_1.Size = new Size(48, 48);
+            pic5_1.Size = new Size(60, 60);
             pic5_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic5_1.TabIndex = 37;
             pic5_1.TabStop = false;
@@ -402,9 +430,10 @@ namespace BoringTetris
             // pic5_2
             // 
             pic5_2.Image = Properties.Resources.tetris_block_dark;
-            pic5_2.Location = new Point(96, 300);
+            pic5_2.Location = new Point(120, 375);
+            pic5_2.Margin = new Padding(4);
             pic5_2.Name = "pic5_2";
-            pic5_2.Size = new Size(48, 48);
+            pic5_2.Size = new Size(60, 60);
             pic5_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic5_2.TabIndex = 33;
             pic5_2.TabStop = false;
@@ -413,9 +442,10 @@ namespace BoringTetris
             // pic5_3
             // 
             pic5_3.Image = Properties.Resources.tetris_block_dark;
-            pic5_3.Location = new Point(144, 300);
+            pic5_3.Location = new Point(180, 375);
+            pic5_3.Margin = new Padding(4);
             pic5_3.Name = "pic5_3";
-            pic5_3.Size = new Size(48, 48);
+            pic5_3.Size = new Size(60, 60);
             pic5_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic5_3.TabIndex = 36;
             pic5_3.TabStop = false;
@@ -424,9 +454,10 @@ namespace BoringTetris
             // pic5_4
             // 
             pic5_4.Image = Properties.Resources.tetris_block_dark;
-            pic5_4.Location = new Point(192, 300);
+            pic5_4.Location = new Point(240, 375);
+            pic5_4.Margin = new Padding(4);
             pic5_4.Name = "pic5_4";
-            pic5_4.Size = new Size(48, 48);
+            pic5_4.Size = new Size(60, 60);
             pic5_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic5_4.TabIndex = 35;
             pic5_4.TabStop = false;
@@ -435,9 +466,10 @@ namespace BoringTetris
             // pic5_0
             // 
             pic5_0.Image = Properties.Resources.tetris_block_dark;
-            pic5_0.Location = new Point(0, 300);
+            pic5_0.Location = new Point(0, 375);
+            pic5_0.Margin = new Padding(4);
             pic5_0.Name = "pic5_0";
-            pic5_0.Size = new Size(48, 48);
+            pic5_0.Size = new Size(60, 60);
             pic5_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic5_0.TabIndex = 34;
             pic5_0.TabStop = false;
@@ -446,9 +478,10 @@ namespace BoringTetris
             // pic6_1
             // 
             pic6_1.Image = Properties.Resources.tetris_block_dark;
-            pic6_1.Location = new Point(48, 348);
+            pic6_1.Location = new Point(60, 435);
+            pic6_1.Margin = new Padding(4);
             pic6_1.Name = "pic6_1";
-            pic6_1.Size = new Size(48, 48);
+            pic6_1.Size = new Size(60, 60);
             pic6_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pic6_1.TabIndex = 42;
             pic6_1.TabStop = false;
@@ -457,9 +490,10 @@ namespace BoringTetris
             // pic6_2
             // 
             pic6_2.Image = Properties.Resources.tetris_block_dark;
-            pic6_2.Location = new Point(96, 348);
+            pic6_2.Location = new Point(120, 435);
+            pic6_2.Margin = new Padding(4);
             pic6_2.Name = "pic6_2";
-            pic6_2.Size = new Size(48, 48);
+            pic6_2.Size = new Size(60, 60);
             pic6_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pic6_2.TabIndex = 38;
             pic6_2.TabStop = false;
@@ -468,9 +502,10 @@ namespace BoringTetris
             // pic6_3
             // 
             pic6_3.Image = Properties.Resources.tetris_block_dark;
-            pic6_3.Location = new Point(144, 348);
+            pic6_3.Location = new Point(180, 435);
+            pic6_3.Margin = new Padding(4);
             pic6_3.Name = "pic6_3";
-            pic6_3.Size = new Size(48, 48);
+            pic6_3.Size = new Size(60, 60);
             pic6_3.SizeMode = PictureBoxSizeMode.StretchImage;
             pic6_3.TabIndex = 41;
             pic6_3.TabStop = false;
@@ -479,9 +514,10 @@ namespace BoringTetris
             // pic6_4
             // 
             pic6_4.Image = Properties.Resources.tetris_block_dark;
-            pic6_4.Location = new Point(192, 348);
+            pic6_4.Location = new Point(240, 435);
+            pic6_4.Margin = new Padding(4);
             pic6_4.Name = "pic6_4";
-            pic6_4.Size = new Size(48, 48);
+            pic6_4.Size = new Size(60, 60);
             pic6_4.SizeMode = PictureBoxSizeMode.StretchImage;
             pic6_4.TabIndex = 40;
             pic6_4.TabStop = false;
@@ -490,19 +526,31 @@ namespace BoringTetris
             // pic6_0
             // 
             pic6_0.Image = Properties.Resources.tetris_block_dark;
-            pic6_0.Location = new Point(0, 348);
+            pic6_0.Location = new Point(0, 435);
+            pic6_0.Margin = new Padding(4);
             pic6_0.Name = "pic6_0";
-            pic6_0.Size = new Size(48, 48);
+            pic6_0.Size = new Size(60, 60);
             pic6_0.SizeMode = PictureBoxSizeMode.StretchImage;
             pic6_0.TabIndex = 39;
             pic6_0.TabStop = false;
             pic6_0.Click += pic6_0_Click;
             // 
+            // labelScore
+            // 
+            labelScore.AutoSize = true;
+            labelScore.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            labelScore.Location = new Point(156, 17);
+            labelScore.Name = "labelScore";
+            labelScore.Size = new Size(91, 30);
+            labelScore.TabIndex = 43;
+            labelScore.Text = "Score: 0";
+            // 
             // View
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(240, 396);
+            ClientSize = new Size(300, 495);
+            Controls.Add(labelScore);
             Controls.Add(pic6_1);
             Controls.Add(pic6_2);
             Controls.Add(pic6_3);
@@ -540,6 +588,7 @@ namespace BoringTetris
             Controls.Add(pic2_0);
             Controls.Add(buttonClear);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4);
             MaximizeBox = false;
             Name = "View";
             Text = "BoringTetris";
@@ -579,6 +628,7 @@ namespace BoringTetris
             ((System.ComponentModel.ISupportInitialize)pic6_4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic6_0).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -619,5 +669,6 @@ namespace BoringTetris
         private PictureBox pic6_3;
         private PictureBox pic6_4;
         private PictureBox pic6_0;
+        private Label labelScore;
     }
 }

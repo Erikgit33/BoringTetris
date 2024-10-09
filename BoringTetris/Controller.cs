@@ -1,4 +1,6 @@
-﻿namespace BoringTetris
+﻿using System.Drawing.Text;
+
+namespace BoringTetris
 {
     internal class Controller
     {
@@ -21,7 +23,8 @@
         public void Click(int row, int col)
         {
             model.Set(row, col);
-            updateView();
+
+            UpdateView();
         }
 
         /// <summary>
@@ -30,15 +33,19 @@
         public void Clear()
         {
             model.Clear();
-            updateView();
+
+            UpdateView();
         }
 
         /// <summary>
         /// View uppdateras genom att varje block i modellens matris
         /// överförs till blocken i viewn.
         /// </summary>
-        private void updateView()
+        private void UpdateView()
         {
+            // uppdatera score    
+            view.UpdateScore(model.GetScore());
+
             // för varje rad
             for (int row = 0; row < model.NumRows(); row++)
             {

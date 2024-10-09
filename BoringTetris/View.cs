@@ -1,3 +1,7 @@
+using BoringTetris.Properties;
+using System;
+using System.Security.Cryptography;
+
 namespace BoringTetris
 {
     public partial class View : Form
@@ -21,12 +25,35 @@ namespace BoringTetris
             this.controller = controller;
         }
 
+        public void UpdateScore(int score)
+        {
+            labelScore.Text = "Score: " + score.ToString();
+        }
+
         /// <summary>
         /// Fyll ett block med innehåll
         /// </summary>
+
+        private Bitmap ChooseColor()
+        {
+            Random rng = new Random();
+            int random = rng.Next(1, 9);
+
+            // sätt färgen på blocket baserat på vad random blir, melan 1 och 8
+            if (random == 1) { return Properties.Resources.tetris_block_blue;   }
+            if (random == 2) { return Properties.Resources.tetris_block_cyan;   }
+            if (random == 3) { return Properties.Resources.tetris_block_green;  }
+            if (random == 4) { return Properties.Resources.tetris_block_light;  }
+            if (random == 5) { return Properties.Resources.tetris_block_orange; }
+            if (random == 6) { return Properties.Resources.tetris_block_purple; }
+            if (random == 7) { return Properties.Resources.tetris_block_red;    }
+            if (random == 8) { return Properties.Resources.tetris_block_yellow; }
+            else { return null; }
+        }
+
         public void Set(int row, int col)
         {
-            set(row, col, Properties.Resources.tetris_block_green);
+            set(row, col, ChooseColor());
         }
 
         /// <summary>

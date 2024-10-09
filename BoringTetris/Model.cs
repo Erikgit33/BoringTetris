@@ -8,6 +8,8 @@
         // antal kolumner
         private int numCols;
 
+        private int score;
+
         // matris som innehåller alla blockens tillstånd
         // false betyder att de är tomma, true att de blivit klickade
         private bool[,] matrix;
@@ -41,6 +43,8 @@
         /// </summary>
         public void Clear()
         {
+            score = 0;
+
             for (int row = 0; row < numRows; row++)
             {
                 clearRow(row);
@@ -74,10 +78,17 @@
                 // om alla block i raden blivit klickade
                 if (isRowComplete(row))
                 {
-                    // återställ raden
+                    // återställ raden och ökar med 
+                    score++;
                     clearRow(row);
                 }
             }
+        }
+
+        // hämta score
+        public int GetScore() 
+        { 
+            return score; 
         }
 
         /// <summary>
